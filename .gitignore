@@ -1,6 +1,8 @@
 *.ts.js
 *.ts.d.ts
 *.css
+*.js
 node_modules
 bower_components
 .sass-cache
+.idea

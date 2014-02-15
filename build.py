@@ -20,6 +20,11 @@ def libs():
   ruffx.typescript.compile(base, ['public', 'js', 'float.ts.js'], ['src', 'float', '__init__.ts'])
 
 
+## Tests
+def tests():
+  ruffx.typescript.test(base, ['src', 'tests', 'tests.js'], ['src', 'tests', '__init__.ts'])
+
+
 ## Serve content for dev
 def server():
 
@@ -43,8 +48,9 @@ def rebuild():
   # Republish dependencies
   ruffx.npm.bower_publish(base, ['public', 'js', 'libs'], ['pixi.js', 'box2d.js'])
 
-  # Common libraries
+  # Common libraries & tests
   libs()
+  tests()
 
 
 if __name__ == '__main__':

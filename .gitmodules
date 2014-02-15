@@ -1,0 +1,6 @@
+[submodule "lib/dsync"]
+	path = lib/dsync
+	url = git@github.com:shadowmint/dsync.ts.git
+[submodule "lib/turn"]
+	path = lib/turn
+	url = git@github.com:shadowmint/turn.ts.git
