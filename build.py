@@ -40,6 +40,9 @@ def rebuild():
   # Npm
   ruffx.npm.install(base)
 
+  # Republish dependencies
+  ruffx.npm.bower_publish(base, ['public', 'js', 'libs'], ['pixi.js', 'box2d.js'])
+
   # Common libraries
   libs()
 

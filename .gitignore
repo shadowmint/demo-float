@@ -1,0 +1,6 @@
+*.ts.js
+*.ts.d.ts
+*.css
+node_modules
+bower_components
+.sass-cache
