@@ -6,6 +6,7 @@
   "homepage": "",
   "private": true,
   "devDependencies": {
+    "bower": "",
     "typescript": "~0.9.5",
     "connect": "~2.12.0",
     "grunt-ts": "~1.6.4",

@@ -17,8 +17,7 @@ def libs():
   ruffx.sass.compile(base, ['public', 'css', 'styles.scss.css'], ['src', 'css', 'styles.scss'])
 
   # Typescript
-  ruffx.typescript.compile(base, ['public', 'js', 'hatchd.ts.js'], ['src', 'hatchd', '__init__.ts'])
-  ruffx.typescript.compile_files(base, ['public', 'js', 'widgets'], ['src', 'hatchd', 'widgets'])
+  ruffx.typescript.compile(base, ['public', 'js', 'float.ts.js'], ['src', 'float', '__init__.ts'])
 
 
 ## Serve content for dev
@@ -29,6 +28,8 @@ def server():
 
   # Start a local server
   r.serve('0.0.0.0', 3001, r.path(__file__, 'public'))
+
+  # Watch for changes
   r.run()
 
 
