@@ -1,4 +1,4 @@
-/// <reference path="../../public/js/float.ts.d.ts" />
+/// <reference path="float.d.ts" />
 declare var require: any;
 declare var global: any;
 declare module turn {

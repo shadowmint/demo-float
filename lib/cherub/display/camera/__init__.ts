@@ -1,2 +1,2 @@
 /// <reference path="../__init__.ts"/>
-/// <reference path="dummy.ts"/>
+/// <reference path="camera.ts"/>

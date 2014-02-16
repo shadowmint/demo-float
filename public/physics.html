@@ -1,0 +1,24 @@
+<head>
+    <script src="js/libs/pixi.js"></script>
+    <script src="js/libs/box2d.js"></script>
+    <script src="js/float.ts.js"></script>
+    <style>
+        canvas {
+            border: 2px solid #333;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    var demo = new float.Demo();
+    demo.start();
+
+    setInterval(function () {
+        if (demo.count < 30) {
+            demo.create(Math.random() * 10, 5 + Math.random() * 10);
+            demo.sync.touch(demo.sync.channels.physics);
+        }
+    }, 100);
+</script>
+</body>
